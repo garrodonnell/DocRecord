@@ -27,13 +27,11 @@ Now you have done the following work by script:
 
 
 ## More details
-
-The following paragraphs:
-  - [How to use the scripts?](#how-to-use-the-scripts)
+- [How to use the scripts?](#how-to-use-the-scripts)
     - [Pre-requisites](#pre-requisites)
     - [Run the creation script and start running step by step](#run-the-creation-script-and-start-running-step-by-step)
     - [Run the deletion script and start cleaning step by step](#run-the-deletion-script-and-start-cleaning-step-by-step)
-  - [Goal of the provided scripts](#goal-of-the-provided-scripts)
+- [Goal of the provided scripts](#goal-of-the-provided-scripts)
     - [Presentation of the scripts](#presentation-of-the-scripts)
     - [Usage pattern for tests and DevOps scenarios](#usage-pattern-for-tests-and-DevOps-scenarios)
     - [Explanation on the scripts](#explanation-on-the-scripts)
@@ -141,7 +139,7 @@ These scripts are:
 
 ### Usage pattern for tests and DevOps scenarios
 
-The `1-authentication.ps1` contain resource existence checking logic. It will skip the creation step for an existing resource and exit if the creation fails or an error occurs. So you can re-run the script.
+The `1-authentication.ps1` contain resource existence checking logic. It will skip the creation step for an existing resource and exit if the creation fails or an error occurs. So you can re-run the script. The `1-authentication-cleanup-app-CIAM` can be re-run as well.
 
 ### Explanation on the scripts
 
@@ -205,7 +203,7 @@ References:
 
     [Get organizationalBrandingLocalization - Microsoft Graph beta | Microsoft Learn](https://learn.microsoft.com/en-us/graph/api/organizationalbrandinglocalization-get?view=graph-rest-beta&tabs=http) 
 
-#### `1-authentication-cleanup-app-CIAM`
+#### `1-authentication-cleanup-app-CIAM.ps1`
 **Mandatory** parameter:
 |parameters|explanation|
 |:---------------:|:---------------:|
