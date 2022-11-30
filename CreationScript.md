@@ -104,8 +104,14 @@ After granting
    cd .\Scripts\
    .\1-authentication-cleanup-except-last-CIAM.ps1
    ```
+    You will You will encounter some errors due to the issue TODO but this script still works fine to achieve our goal.
+    ![Screenshot](figure/service_principal_errors.png)
 
-1. After running the deletion script, all initial checks in the portal shoule pass.Click **Delete** button to complete the last action in order to delete the tenant.
+1. After running the deletion script, all initial checks in the portal should pass except 'Users' & 'Users Flow' because of the issues TODO. Click **'Delete all users'** to manually delete all users except from the admin user.
+![Screenshot](figure/checking_list.png)
+![Screenshot](figure/manual_deletion_users.png)
+
+1. Back to the 'Deletion tenant' page and then click **Refresh** button. The **Delete** button will be activated after refreshing. You do not need to worry about the 'Delete all user flows' hint due to the issue TODO. Click **Delete** button to complete the last action to delete the tenant.
 ![Screenshot](figure/deletion_list.png)
 
 
