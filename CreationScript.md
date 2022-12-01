@@ -105,14 +105,14 @@ After granting
    cd .\Scripts\
    .\1-authentication-cleanup-except-last-CIAM.ps1
    ```
-    You will You will encounter some errors due to the issue TODO but this script still works fine to achieve our goal.
+    You will You will encounter some errors due to the [issue2] but this script still works fine to achieve our goal.
     ![Screenshot](figure/service_principal_errors.png)
 
-1. After running the deletion script, all initial checks in the portal should pass except 'Users' & 'Users Flow' because of the issues TODO. Click **'Delete all users'** to manually delete all users except from the admin user.
+1. After running the deletion script, all initial checks in the portal should pass except 'Users' & 'Users Flow' because of the [issue4] and [issue9]. Click **'Delete all users'** to manually delete all users except from the admin user.
 ![Screenshot](figure/checking_list.png)
 ![Screenshot](figure/manual_deletion_users.png)
 
-1. Back to the 'Deletion tenant' page and then click **Refresh** button. The **Delete** button will be activated after refreshing. You do not need to worry about the 'Delete all user flows' hint due to the issue TODO. Click **Delete** button to complete the last action to delete the tenant.
+1. Back to the 'Deletion tenant' page and then click **Refresh** button. The **Delete** button will be activated after refreshing. You do not need to worry about the 'Delete all user flows' hint due to the [issue4]. Click **Delete** button to complete the last action to delete the tenant.
 ![Screenshot](figure/deletion_list.png)
 
 
@@ -235,30 +235,33 @@ References:
     [Remove-AzADServicePrincipal (Az.Resources) | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/az.resources/remove-azadserviceprincipal?view=azps-8.3.0) 
 1. Elevate role *(API/CLI, no available PowerShell)*.
 
-    [Elevate access to manage all Azure subscriptions and management groups | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin)
+    [Elevate access to manage all Azure subscriptions and management groups | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin)[issue1]
 
     [Global Administrator - Elevate Access - REST API (Azure Authorization) | Microsoft Learn](https://learn.microsoft.com/en-us/rest/api/authorization/global-administrator/elevate-access?tabs=HTTP)
 
 
 ## Issue list in CIAM PP1
 1. [Bug 2175335: [Tenant Creation] New-AzResourceGroupDeployment related bugs - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175335)
-
 1. [Bug 2175345: [PowerShell] MS Graph Enterprise Applications Deletion - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175345)
-
 1. [Bug 2175348: [User Flow] Unstable MS Graph user flow API endpoints - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175348)
-
 1. [Bug 2175350: [User Flow PowerShell] Always shows “No user flows found” in the portal - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175350)
-
 1. [Bug 2176373: [PowerShell] Resource Group in portal ≠ Resource Group in PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2176373)
-
 1. [Bug 2175371: [Portal] Delete button bug in the portal - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175371)
-
 1. [Bug 2175385: [Branding] No image removal PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175385)
-
 1. [Bug 2181319: [Branding PowerShell] API / PowerShell invalid when try to upload the background image - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181319)
-
 1. [Bug 2181718: [Delete Users PowerShell] No reasonable/easy way to delete users in the tenant through PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181718)
-
 1. [Bug 2181789: [Grant Admin PowerShell] No reasonable/easy way to grant admin consent for tenant through PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181789)
-
 1. [Bug 2175410: [PowerShell] Currently only APIs no PowerShell command lines - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175410)
+
+
+[issue1]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175335> "Bug 2175335: [Tenant Creation] New-AzResourceGroupDeployment related bugs - Boards (visualstudio.com)"
+[issue2]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175345> "Bug 2175345: [PowerShell] MS Graph Enterprise Applications Deletion - Boards (visualstudio.com)"
+[issue3]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175348> "Bug 2175348: [User Flow] Unstable MS Graph user flow API endpoints - Boards (visualstudio.com)"
+[issue4]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175350> "Bug 2175350: [User Flow PowerShell] Always shows “No user flows found” in the portal - Boards (visualstudio.com)"
+[issue5]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2176373> "Bug 2176373: [PowerShell] Resource Group in portal ≠ Resource Group in PowerShell - Boards (visualstudio.com)"
+[issue6]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175371> "Bug 2175371: [Portal] Delete button bug in the portal - Boards (visualstudio.com)"
+[issue7]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175385> "Bug 2175385: [Branding] No image removal PowerShell - Boards (visualstudio.com)"
+[issue8]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181319> "Bug 2181319: [Branding PowerShell] API / PowerShell invalid when try to upload the background image - Boards (visualstudio.com)"
+[issue9]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181718> "Bug 2181718: [Delete Users PowerShell] No reasonable/easy way to delete users in the tenant through PowerShell - Boards (visualstudio.com)"
+[issue10]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181789> "Bug 2181789: [Grant Admin PowerShell] No reasonable/easy way to grant admin consent for tenant through PowerShell - Boards (visualstudio.com)"
+[issue11]: <https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175410> "Bug 2175410: [PowerShell] Currently only APIs no PowerShell command lines - Boards (visualstudio.com)"
