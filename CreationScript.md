@@ -67,11 +67,6 @@ Now you have done the following work by script:
 1. Copy the link appeared in the PowerShell interface and visit that link through browser *(If you did not switch to the correspond tenant in the previous step, you are likely to meet problem in this step)*. Copy **Application (client) ID** and **Directory (tenant) ID** which are used in later steps.
 ![Screenshot](figure/application_information.png)
 
-1. In the **API permissions** tab under the application page, click **Grant admin consent {tenant domain}** button.
-![Screenshot](figure/grant_admin.png)
-After granting
-![Screenshot](figure/grant_status.png)
-
 1. You can use [Javascript sample appliation](https://github.com/Azure-Samples/ms-identity-javascript-tutorial/tree/main/1-Authentication/1-sign-in/App) to test functionality. Under **"ms-identity-javascript-tutorial\1-Authentication\1-sign-in\App"**, open **authConfig** file to replace the **Application (client) ID** and **Directory (tenant) ID** as figure showed.
 ![Screenshot](figure/configuration.png)
 
@@ -108,9 +103,8 @@ After granting
     You will You will encounter some errors due to the [issue2] but this script still works fine to achieve our goal.
     ![Screenshot](figure/service_principal_errors.png)
 
-1. After running the deletion script, all initial checks in the portal should pass except 'Users' & 'Users Flow' because of the [issue4] and [issue9]. Click **'Delete all users'** to manually delete all users except from the admin user.
+1. After running the deletion script, all initial checks in the portal should pass except 'Users' & 'Users Flow' because of the [issue4]. 
 ![Screenshot](figure/checking_list.png)
-![Screenshot](figure/manual_deletion_users.png)
 
 1. Back to the 'Deletion tenant' page and then click **Refresh** button. The **Delete** button will be activated after refreshing. You do not need to worry about the 'Delete all user flows' hint due to the [issue4]. Click **Delete** button to complete the last action to delete the tenant.
 ![Screenshot](figure/deletion_list.png)
@@ -249,8 +243,6 @@ References:
 1. [Bug 2175371: [Portal] Delete button bug in the portal - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175371)
 1. [Bug 2175385: [Branding] No image removal PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175385)
 1. [Bug 2181319: [Branding PowerShell] API / PowerShell invalid when try to upload the background image - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181319)
-1. [Bug 2181718: [Delete Users PowerShell] No reasonable/easy way to delete users in the tenant through PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181718)
-1. [Bug 2181789: [Grant Admin PowerShell] No reasonable/easy way to grant admin consent for tenant through PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181789)
 1. [Bug 2175410: [PowerShell] Currently only APIs no PowerShell command lines - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175410)
 
 
