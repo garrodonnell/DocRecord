@@ -239,7 +239,6 @@ References:
 1. [Bug 2175345: [PowerShell] MS Graph Enterprise Applications Deletion - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175345)
 1. [Bug 2175348: [User Flow] Unstable MS Graph user flow API endpoints - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175348)
 1. [Bug 2175350: [User Flow PowerShell] Always shows “No user flows found” in the portal - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175350)
-1. [Bug 2176373: [PowerShell] Resource Group in portal ≠ Resource Group in PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2176373)
 1. [Bug 2175371: [Portal] Delete button bug in the portal - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175371)
 1. [Bug 2175385: [Branding] No image removal PowerShell - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2175385)
 1. [Bug 2181319: [Branding PowerShell] API / PowerShell invalid when try to upload the background image - Boards (visualstudio.com)](https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2181319)
