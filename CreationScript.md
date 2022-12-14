@@ -20,7 +20,7 @@
 
 Now you have done the following work by script:
 - Create a CIAM tenant.
-- Create the app registration with offline_access and open_id permission
+- Create the app registration with offline_access and open_id permission under admin grant.
 - Create a service principal for the app.
 - Create a user flow as the default one.
 - Create a customized localization branding as the default one.
@@ -129,6 +129,8 @@ These scripts are:
 - `1-authentication-configurate-app-CIAM.ps1` which:
   - create the app registration
   - create a service principal for the app
+  - add microsoft graph permission of offline_access and openid
+  - create Oauth2 permission grant
   - create a user flow
   - customize the branding of the text information
   - creates a summary containing:
@@ -196,6 +198,14 @@ References:
 
     [Get-MgServicePrincipal (Microsoft.Graph.Applications) | Microsoft Learn](https://microsofteur-my.sharepoint.com/:w:/g/personal/yuxin_microsoft_com/EbSicA2AWIlPjkydtgQsPhABNK8dxNZM03eYFJEiZ_ty7A?e=9I1Zwz)
 
+1. Add Microsoft Graph permission of offline_access and openid.
+
+1. Create Oauth2 permission grant.
+
+    [Grant tenant-wide admin consent to an application](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent?pivots=ms-powershell)
+
+    [Grant consent on behalf of a single user by using PowerShell](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/grant-consent-single-user?pivots=msgraph-powershell)
+
 1. Create a user flow *(MS Graph API, no available command line)*.
 
     [ciam/API#3-CIAM-user-flows.md at main · microsoft-entra/ciam (github.com)](https://github.com/microsoft-entra/ciam/blob/main/API%233-CIAM-user-flows.md)
@@ -224,9 +234,18 @@ References:
     [Remove-AzADApplication (Az.Resources) | Microsoft Learn ](https://learn.microsoft.com/en-us/powershell/module/az.resources/remove-azadapplication?view=azps-9.1.0)
 
 1. Remove user flows *(MS Graph API, no available PowerShell)*.
+    [ciam/API#3-CIAM-user-flows.md at main · microsoft-entra/ciam (github.com)](https://github.com/microsoft-entra/ciam/blob/main/API%233-CIAM-user-flows.md)
+
 1. Remove service principals of the app.
 
     [Remove-AzADServicePrincipal (Az.Resources) | Microsoft Learn](https://learn.microsoft.com/en-us/powershell/module/az.resources/remove-azadserviceprincipal?view=azps-8.3.0) 
+
+1. Remove all users of the tenant.
+
+    [Remove-MgUser](https://learn.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mguser?view=graph-powershell-1.0)
+
+    [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference)
+
 1. Elevate role *(API/CLI, no available PowerShell)*.
 
     [Elevate access to manage all Azure subscriptions and management groups | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/elevate-access-global-admin)[issue1]
