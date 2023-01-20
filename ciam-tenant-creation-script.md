@@ -35,16 +35,16 @@ In this article you will complete the following work by script:
 -  [PowerShellGet](https://learn.microsoft.com/en-us/powershell/scripting/gallery/installing-psget?view=powershell-7.2).
 - [Bicep tool](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/install).
 - [Node.js](https://nodejs.org/en/).
-- [CIAM Tenant Creation Scripts](media\Scripts.rar).
+- [CIAM Tenant Creation Scripts](/Scripts.rar).
 
 ## Run the creation script
 1. Open the [Azure portal](https://portal.azure.com)
 1. Navigate to the **Directories +subscriptions page** page.
-![Screenshot of the Azure portal highlighting the Directories and Subscriptions filter icon](media\directories-subscription-filter-icon.png)
+![Screenshot of the Azure portal highlighting the Directories and Subscriptions filter icon](media/directories-subscription-filter-icon.png)
 1. Copy and save the **Directory ID** for your **Default Directory** somewhere for later use.
-![Screenshot of the Azure portal Directories and Subscriptions page with the Directory ID highlighted](media\copy-tenant-id.png)
+![Screenshot of the Azure portal Directories and Subscriptions page with the Directory ID highlighted](media/copy-tenant-id.png)
 1. Open the [Azure portal](https://portal.azure.com). Search for and navigate to the 'Subscription' page. Copy and save the **Subsription ID** you wish to use somewhere for later use.*
-![Screenshot of the Azure portal Subscriptions page with the Subscription ID highlighted.](media\copy-subsription-id.png)
+![Screenshot of the Azure portal Subscriptions page with the Subscription ID highlighted.](media/copy-subsription-id.png)
 1. Open PowerShell.
 1. Navigate to the root directory of the downloaded sample.
 1. Go to the `Scripts` folder and run the script with the following command.
