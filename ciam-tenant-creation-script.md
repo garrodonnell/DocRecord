@@ -60,13 +60,13 @@ In this article you will complete the following work by script:
 1. Switch to the tenant newly created by the script.
 
 1. Copy the link from the PowerShell interface and paste it into your browser (If you did not switch to the correct tenant in the previous step this step will not work). Copy **Application (client) ID** and **Directory (tenant) ID** which are used in later steps.
-![Screenshot of the newly created CIAM Test App  information page in the Azure Portal](media\ciam-test-app.png)
+![Screenshot of the newly created CIAM Test App  information page in the Azure Portal](./media/ciam-test-app.png)
 
 1. You can now use [Javascript sample appliation](https://github.com/Azure-Samples/ms-identity-javascript-tutorial/) to test functionality. 
 
 1. Clone or download the app to your local machine. 
 1. Under **ms-identity-javascript-tutorial\1-Authentication\1-sign-in\App**, open **authConfig.js** to replace the **Application (client) ID** and **Directory (tenant) ID**.
-![Screenshot showing authconfig.js with red boxes highlighting parameters that need to be changed](media\sample-update-clientid.png)
+![Screenshot showing authconfig.js with red boxes highlighting parameters that need to be changed](./media/sample-update-clientid.png)
 
 1. In PowerShell move to the directory where you have cloned / downloaded the sample app and run the following command to start the app.
 
